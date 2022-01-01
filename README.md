@@ -17,7 +17,7 @@ From the repository folder:
 
 ```
     mkdir build ; cd build
-    cmake .. -DHFS="/opt/hfs18.5.596"
+    cmake .. -DHFS="~/houdini18.5"
     cmake --build . --config Release
 ```
 
