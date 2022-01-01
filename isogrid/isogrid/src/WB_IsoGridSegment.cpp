@@ -84,6 +84,6 @@ void WB_IsoGridSegment::initialize(int q1, int r1, int q2, int r2)
   {
     auto s = (std::string("Invalid segment: ") + std::to_string(q1) + ", " + std::to_string(r1) + ", " +
               std::to_string(q2) + ", " + std::to_string(r2) + ".");
-    throw std::exception(s.c_str());
+    throw std::runtime_error(s.c_str());
   }
 }

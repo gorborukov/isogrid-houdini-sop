@@ -13,5 +13,7 @@ add_library(isogrid STATIC
   src/WB_CubeGridExporter.cpp
 )
 
+set_property(TARGET isogrid PROPERTY POSITION_INDEPENDENT_CODE ON)
+
 target_include_directories(isogrid PUBLIC include)
 target_link_libraries(isogrid PRIVATE applet)

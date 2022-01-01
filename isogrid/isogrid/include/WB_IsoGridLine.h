@@ -1,6 +1,8 @@
 #pragma once
 #include "WB_IsoGridSegment.h"
 #include "typedef.h"
+#include <stdexcept>
+#include <sstream>
 
 struct WB_IsoGridLine
 {

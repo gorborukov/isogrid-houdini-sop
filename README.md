@@ -1,3 +1,4 @@
+** Linux compatible version **
 # isogrid Houdini SOP
 
 ![A](https://media.giphy.com/media/Yrfx3lUESu9V9YG2VO/giphy.gif)
@@ -8,7 +9,7 @@ This is a C++ port of [isogrid](https://github.com/wblut/isogrid) Processing lib
 ## Requirements
 
 - CMake
-- C++ compiler (compatible with your Houdini version. e.g. For 16.5 you need MSVC 2015).
+- C++ compiler
 
 ## Build
 
@@ -16,7 +17,7 @@ From the repository folder:
 
 ```
     mkdir build ; cd build
-    cmake .. -DHFS="C:/Program Files/Side Effects Software/Houdini 16.5.405"
+    cmake .. -DHFS="/opt/hfs18.5.596"
     cmake --build . --config Release
 ```
 

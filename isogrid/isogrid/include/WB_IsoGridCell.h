@@ -1,5 +1,6 @@
 #pragma once
 #include "typedef.h"
+#include <climits>
 
 struct WB_IsoGridCell
 {

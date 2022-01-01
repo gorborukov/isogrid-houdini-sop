@@ -13,7 +13,7 @@ void WB_IsoGridLine::add(const WB_IsoGridSegment &segment)
               std::to_string(segment.getLineValue()) + ", and cannot be added to line of type " + std::to_string(type) +
               " with value " + std::to_string(lineValue) + ".");
 
-    throw std::exception(s.c_str());
+    throw std::runtime_error(s.c_str());
   }
 }
 

@@ -36,11 +36,11 @@ struct IsoSystem
 
   void set(int i, int j, int k, int colorIndex, int blocki, int blockj, int blockk);
   void clear(int i, int j, int k, int blocki, int blockj, int blockk);
-  void and (int i, int j, int k, int blocki, int blockj, int blockk);
+  void _and (int i, int j, int k, int blocki, int blockj, int blockk);
 
-  void or (int i, int j, int k, int blocki, int blockj, int blockk);
+  void _or (int i, int j, int k, int blocki, int blockj, int blockk);
 
-  void xor (int i, int j, int k, int blocki, int blockj, int blockk);
+  void _xor (int i, int j, int k, int blocki, int blockj, int blockk);
 
   void invert(int i, int j, int k, int blocki, int blockj, int blockk);
 

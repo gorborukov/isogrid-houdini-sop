@@ -5,6 +5,7 @@ struct PApplet;
 #include "typedef.h"
 #include <array>
 #include <math.h>
+#include <climits>
 //
 
 #include "WB_IsoGridCell.h"

@@ -134,7 +134,7 @@ void IsoSystem::clear(int i, int j, int k, int blocki, int blockj, int blockk)
   }
 }
 
-void IsoSystem::and(int i, int j, int k, int blocki, int blockj, int blockk)
+void IsoSystem::_and(int i, int j, int k, int blocki, int blockj, int blockk)
 {
   for (int di = 0; di < blocki; di++)
   {
@@ -152,7 +152,7 @@ void IsoSystem::and(int i, int j, int k, int blocki, int blockj, int blockk)
   }
 }
 
-void IsoSystem:: or (int i, int j, int k, int blocki, int blockj, int blockk)
+void IsoSystem:: _or (int i, int j, int k, int blocki, int blockj, int blockk)
 {
   for (int di = 0; di < blocki; di++)
   {
@@ -169,7 +169,7 @@ void IsoSystem:: or (int i, int j, int k, int blocki, int blockj, int blockk)
     }
   }
 }
-void IsoSystem:: xor
+void IsoSystem:: _xor
     (int i, int j, int k, int blocki, int blockj, int blockk) {
       for (int di = 0; di < blocki; di++)
       {
@@ -312,7 +312,7 @@ void IsoSystem::subdivideRandomGrid(int step, float divide, float retain, float 
           boolean on = random(100) < retain;
           if (on)
           {
-            and(i, j, k, hs, hs, hs);
+            _and(i, j, k, hs, hs, hs);
           }
           else
           {
@@ -321,7 +321,7 @@ void IsoSystem::subdivideRandomGrid(int step, float divide, float retain, float 
           on = random(100) < retain;
           if (on)
           {
-            and(i + hs, j, k, hs, hs, hs);
+            _and(i + hs, j, k, hs, hs, hs);
           }
           else
           {
@@ -330,7 +330,7 @@ void IsoSystem::subdivideRandomGrid(int step, float divide, float retain, float 
           on = random(100) < retain;
           if (on)
           {
-            and(i, j + hs, k, hs, hs, hs);
+            _and(i, j + hs, k, hs, hs, hs);
           }
           else
           {
@@ -339,7 +339,7 @@ void IsoSystem::subdivideRandomGrid(int step, float divide, float retain, float 
           on = random(100) < retain;
           if (on)
           {
-            and(i, j, k + hs, hs, hs, hs);
+            _and(i, j, k + hs, hs, hs, hs);
           }
           else
           {
@@ -348,7 +348,7 @@ void IsoSystem::subdivideRandomGrid(int step, float divide, float retain, float 
           on = random(100) < retain;
           if (on)
           {
-            and(i + hs, j + hs, k, hs, hs, hs);
+            _and(i + hs, j + hs, k, hs, hs, hs);
           }
           else
           {
@@ -357,7 +357,7 @@ void IsoSystem::subdivideRandomGrid(int step, float divide, float retain, float 
           on = random(100) < retain;
           if (on)
           {
-            and(i + hs, j, k + hs, hs, hs, hs);
+            _and(i + hs, j, k + hs, hs, hs, hs);
           }
           else
           {
@@ -366,7 +366,7 @@ void IsoSystem::subdivideRandomGrid(int step, float divide, float retain, float 
           on = random(100) < retain;
           if (on)
           {
-            and(i, j + hs, k + hs, hs, hs, hs);
+            _and(i, j + hs, k + hs, hs, hs, hs);
           }
           else
           {
@@ -375,7 +375,7 @@ void IsoSystem::subdivideRandomGrid(int step, float divide, float retain, float 
           on = random(100) < retain;
           if (on)
           {
-            and(i + hs, j + hs, k + hs, hs, hs, hs);
+            _and(i + hs, j + hs, k + hs, hs, hs, hs);
           }
           else
           {
