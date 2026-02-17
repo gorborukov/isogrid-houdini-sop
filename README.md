@@ -17,8 +17,7 @@ From the repository folder:
 
 ```
     mkdir build ; cd build
-    cmake .. -DHFS="~/houdini18.5"
+    HFS=/opt/hfs21.0.440/
+    cmake .. -DHFS="~/houdini21.0"
     cmake --build . --config Release
 ```
-
-You additionally can set `HOUDINI_DSO_DIR` variable if your configuration folder is not default.
